@@ -1,0 +1,82 @@
+<div class="row">
+<form class="col s12" action="/Profesor/create" method="POST">
+<h2>REGISTRO</h2><br>
+<div class="row">
+        <div class="input-field col s6">
+          <input placeholder="1234566789" name="matricula"  type="text" class="validate" required>
+          <label for="Matricula">Matricula</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" placeholder="Juan" name="nombre" type="text" class="validate" required>
+          <label for="Apellido">Nombres</label>
+        </div>
+      </div>
+    <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Peréz" name="A_Paterno"   type="text" class="validate" required>
+          <label for="Apellido_P">Apellido Paterno </label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" placeholder="Gonzalez"  name="A_Materno" type="text" class="validate" required>
+          <label for="last_name">Apellido Materno</label>
+        </div>
+      </div>
+    <div class="row">
+        <div class="input-field col s6">
+        
+    <select name="genero" required>
+      <option value="" disabled selected>Selecciona</option>
+      <option value="Masculino">Masculino</option>
+      <option value="Femenino">Femenino</option>
+    </select>
+    <label>Sexo</label>
+  
+        </div>
+        <div class="input-field col s6">
+         <input type="date" class="datepicker" name="fecha_nacimiento" required>
+            <label for="first_name">Fecha de Nacimiento</label>
+        </div>
+      </div>
+    <div class="row">
+        <div class="input-field col s6">
+            <textarea id="textarea1" name="direccion" class="materialize-textarea" required></textarea>
+          <label for="textarea1">Dirección</label>
+        </div>
+        <div class="input-field col s6">
+           <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" name="telefono" class="validate">
+          <label for="icon_telephone">Telephone</label>
+        <div class="file-field input-field">
+      <div class="btn #0277bd light-blue darken-3">
+        <span>Imagen</span>
+        <input type="file" multiple>
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="foto del Alumno">
+      </div>
+    </div>
+        </div>
+      </div>
+    <div class="row">
+     <div class="input-field inline">
+            <input id="email" type="email" name="email" class="validate">
+            <label for="email" data-error="wrong" data-success="right">Email</label>
+          </div>
+          <select name="cursa" required>
+      <option value="" disabled selected>Selecciona</option>
+      <option value="12">Software</option>
+      <option value="121">Energia</option>
+      <option value="1211">Manofactura</option>
+    </select>
+    <label>Carrera</label>
+    
+    </div>
+<button class="btn waves-effect waves-light #0277bd light-blue darken-3 " value="registrar" type="submit" >Registrar
+    <i class="material-icons right">send</i>
+  </button>
+    
+     
+     
+     
+</form>
+    </div>
